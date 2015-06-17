@@ -9,9 +9,9 @@ void SimulaAFND(Digraph *G, char teste[100], int len) {
 
 	k=0;
 	Est_atualND[G->Est_inicial] = 1;	//marca estado inicial
-	
+
 	while(1) {
-		
+
 		for(i=0; i < G->V; i++) {
 			if(Est_atualND[i] == 1 || Est_atualND[i] == 3) {	//verifica se i e um estado atual
 				for(j=0; j < G->V; j++) {
